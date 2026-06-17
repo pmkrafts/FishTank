@@ -3,6 +3,28 @@
 All codebase changes are logged here in reverse-chronological order (newest first).
 
 ---
+### [ENTRY #10] - 2026-06-17 13:31:48 (IST)
+
+**Files Changed:**
+- `CHANGELOG-AUDIT.md` (+33 lines, -0 lines)
+- `apps/web/package.json` (+1 line, -0 lines)
+- `apps/web/astro.config.mjs` (+5 lines, -3 lines)
+- `apps/web/.env.example` (+5 lines, -0 lines)
+- `docs/DEPLOYMENT.md` (+76 lines, -0 lines)
+- `pnpm-lock.yaml` (+60 lines, -0 lines)
+
+**Changes Made:**
+- Added `@astrojs/cloudflare` adapter and configured Astro for Cloudflare Pages static output.
+- Created `apps/web/.env.example` with `PUBLIC_API_URL` and `PUBLIC_FINGERPRINT_API_KEY` placeholders.
+- Added `docs/DEPLOYMENT.md` with step-by-step Cloudflare deployment instructions.
+- Attempted `wrangler deploy`; blocked because `CLOUDFLARE_API_TOKEN` is not configured.
+
+**Purpose:**
+- Prepare Phase 6 deployment artifacts and document the remaining external steps.
+
+**Status:** ✅ Recorded
+
+---
 ### [ENTRY #9] - 2026-06-17 13:27:07 (IST)
 
 **Files Changed:**

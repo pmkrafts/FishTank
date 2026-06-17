@@ -5,17 +5,22 @@
   "type": "module",
   "scripts": {
     "dev": "wrangler dev",
+    "dev:local": "tsx src/local/index.ts",
+    "start:local": "node --import=tsx src/local/index.ts",
     "deploy": "wrangler deploy",
     "types": "wrangler types",
     "test": "vitest run"
   },
   "dependencies": {
     "@fishtank/shared": "workspace:*",
+    "@hono/node-server": "^2.0.5",
     "hono": "^4.9.0"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.8.0",
     "@cloudflare/workers-types": "^4.20250501.0",
+    "@types/node": "^25.9.3",
+    "tsx": "^4.0.0",
     "typescript": "^5.8.0",
     "vitest": "^3.0.0",
     "wrangler": "^4.0.0"

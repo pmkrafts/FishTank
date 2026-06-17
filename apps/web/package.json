@@ -12,7 +12,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^13.7.0",
     "@astrojs/react": "^5.0.7",
     "@fingerprintjs/fingerprintjs-pro": "^3.12.10",
     "@fishtank/shared": "workspace:*",
