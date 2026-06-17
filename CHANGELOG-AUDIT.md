@@ -3,6 +3,23 @@
 All codebase changes are logged here in reverse-chronological order (newest first).
 
 ---
+### [ENTRY #13] - 2026-06-17 16:48:38 (IST)
+
+**Files Changed:**
+- `docs/getting-started.md` (+117 lines, -0 lines)
+- `README.md` (+53 lines, -1 line)
+- `CHANGELOG-AUDIT.md` (+16 lines, -0 lines)
+
+**Changes Made:**
+- Created `docs/getting-started.md` with prerequisites, install steps, stack table, run commands, debugging tips, and links to other docs.
+- Rewrote `README.md` to include project overview, stack, quick-start, commands, debugging, and documentation links.
+
+**Purpose:**
+- Make the project easy to start, debug, and understand for new contributors.
+
+**Status:** ✅ Recorded
+
+---
 ### [ENTRY #12] - 2026-06-17 14:11:19 (IST)
 
 **Files Changed:**
