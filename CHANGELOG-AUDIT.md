@@ -3,6 +3,39 @@
 All codebase changes are logged here in reverse-chronological order (newest first).
 
 ---
+### [ENTRY #9] - 2026-06-17 13:27:07 (IST)
+
+**Files Changed:**
+- `CHANGELOG-AUDIT.md` (+30 lines, -0 lines)
+- `apps/web/package.json` (+2 lines, -0 lines)
+- `apps/web/tsconfig.json` (+2 lines, -1 line)
+- `apps/web/src/lib/env.ts` (+2 lines, -0 lines)
+- `apps/web/src/lib/mask.ts` (+107 lines, -0 lines)
+- `apps/web/src/components/FishMaskSelector.tsx` (+36 lines, -0 lines)
+- `apps/web/src/components/UploadPipeline.tsx` (+265 lines, -0 lines)
+- `apps/web/src/components/AquariumCanvas.tsx` (+221 lines, -0 lines)
+- `apps/web/src/components/RateLimitBanner.tsx` (+35 lines, -0 lines)
+- `apps/web/src/pages/add.astro` (+4 lines, -3 lines)
+- `apps/web/src/pages/index.astro` (+6 lines, -4 lines)
+- `packages/shared/src/constants.ts` (+2 lines, -1 line)
+- `packages/shared/masks/` (+8 SVG masks)
+- `apps/web/public/masks/` (+8 SVG masks)
+- `pnpm-lock.yaml` (+lockfile updates)
+
+**Changes Made:**
+- Added 8 fish-shaped SVG masks and a public copy for runtime access.
+- Built the upload pipeline with photo upload and text + color modes.
+- Implemented canvas-based masking for both photos and text labels.
+- Integrated @fingerprintjs/fingerprintjs-pro visitor identification and submit flow.
+- Built the PixiJS aquarium canvas with swimming fish, bubbles, expiry handling, and stats overlay.
+- Added the rate-limit banner on the aquarium page.
+
+**Purpose:**
+- Implement Phase 3, Phase 4, and Phase 5 of `docs/aquarium-execution-plan.md`.
+
+**Status:** ✅ Recorded
+
+---
 ### [ENTRY #8] - 2026-06-17 13:03:47 (IST)
 
 **Files Changed:**
