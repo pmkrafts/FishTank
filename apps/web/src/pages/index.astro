@@ -1,17 +1,24 @@
 ---
-
+import BrutalLayout from "../layouts/BrutalLayout.astro";
+import { BrutalButton } from "../components/BrutalButton";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BrutalLayout title="FISHTANK — Shared Aquarium">
+  <div style="display:grid; gap:2rem; padding:2rem; max-width:1200px; margin:0 auto;">
+    <section class="brutal-box" style="border:6px solid var(--ink);">
+      <h1 class="brutal-title" style="margin-bottom:1rem;">SHARED DIGITAL AQUARIUM</h1>
+      <p style="max-width:60ch; margin:0 0 1.5rem;">
+        Upload a photo or type a label to release a fish into the tank. Max 100 fish. Each fish lives 5 minutes. One release every 4 hours.
+      </p>
+      <a href="/add" style="text-decoration:none;">
+        <BrutalButton client:load>ADD YOUR FISH</BrutalButton>
+      </a>
+    </section>
+
+    <section class="brutal-frame" style="background:var(--ink); min-height:400px; position:relative;">
+      <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:var(--bg);">
+        <p style="text-transform:uppercase; font-weight:700;">Aquarium canvas loading…</p>
+      </div>
+    </section>
+  </div>
+</BrutalLayout>

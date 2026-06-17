@@ -1,0 +1,41 @@
+---
+export interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <style>
+      @import "../styles/brutal.css";
+    </style>
+  </head>
+  <body>
+    <header class="brutal-box-black">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+        <a href="/" style="color:var(--bg); text-decoration:none;">
+          <span class="brutal-title" style="font-size:1.5rem;">FISHTANK</span>
+        </a>
+        <nav style="display:flex; gap:1rem; align-items:center;">
+          <a href="/" style="color:var(--bg);">AQUARIUM</a>
+          <a href="/add" style="color:var(--bg);">ADD FISH</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="brutal-box" style="border-top:0;">
+      <p style="margin:0; font-size:0.75rem; text-transform:uppercase;">
+        Digital Aquarium — Brutalist Edition. One fish per visitor every 4 hours.
+      </p>
+    </footer>
+  </body>
+</html>

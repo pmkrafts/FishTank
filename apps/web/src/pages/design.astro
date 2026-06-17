@@ -1,0 +1,39 @@
+---
+import BrutalLayout from "../layouts/BrutalLayout.astro";
+import { BrutalButton } from "../components/BrutalButton";
+import { BrutalBox } from "../components/BrutalBox";
+import { BrutalInput } from "../components/BrutalInput";
+import { BrutalAlert } from "../components/BrutalAlert";
+---
+
+<BrutalLayout title="Design System — FISHTANK">
+  <div style="padding:2rem; display:grid; gap:2rem; max-width:900px; margin:0 auto;">
+    <h1 class="brutal-title">DESIGN SYSTEM</h1>
+
+    <BrutalBox>
+      <p class="brutal-label" style="margin:0 0 1rem;">Buttons</p>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+        <BrutalButton client:load>Primary</BrutalButton>
+        <BrutalButton client:load variant="outline">Outline</BrutalButton>
+        <BrutalButton client:load disabled>Disabled</BrutalButton>
+      </div>
+    </BrutalBox>
+
+    <BrutalBox variant="black">
+      <p style="margin:0;">Inverted box. Black background, off-white text, thick border.</p>
+    </BrutalBox>
+
+    <BrutalBox>
+      <p class="brutal-label" style="margin:0 0 1rem;">Inputs</p>
+      <BrutalInput client:load label="FISH NAME" placeholder="TYPE HERE" />
+    </BrutalBox>
+
+    <BrutalAlert client:load variant="red">
+      <p style="margin:0; font-weight:700;">RED ALERT — COOLDOWN ACTIVE</p>
+    </BrutalAlert>
+
+    <BrutalAlert client:load variant="blue">
+      <p style="margin:0; font-weight:700;">BLUE ALERT — YOU MAY RELEASE ONE FISH</p>
+    </BrutalAlert>
+  </div>
+</BrutalLayout>

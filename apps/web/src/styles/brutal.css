@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #F4F4F0;
+  --ink: #000000;
+  --accent: #FF2D00;
+  --water: #0055FF;
+  --mute: #BDBDBD;
+  --border: 4px solid var(--ink);
+  --font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  line-height: 1.4;
+}
+
+a {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+.brutal-box {
+  border: var(--border);
+  background: var(--bg);
+  padding: 1rem;
+}
+
+.brutal-box-black {
+  border: var(--border);
+  background: var(--ink);
+  color: var(--bg);
+  padding: 1rem;
+}
+
+.brutal-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border);
+  background: var(--ink);
+  color: var(--bg);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.brutal-button:hover:not(:disabled) {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.brutal-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.brutal-button-outline {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.brutal-button-outline:hover:not(:disabled) {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.brutal-input,
+.brutal-textarea {
+  border: var(--border);
+  background: var(--bg);
+  color: var(--ink);
+  padding: 0.75rem;
+  width: 100%;
+  outline: none;
+}
+
+.brutal-input:focus,
+.brutal-textarea:focus {
+  box-shadow: inset 0 0 0 2px var(--ink);
+}
+
+.brutal-alert {
+  border: var(--border);
+  border-left-width: 12px;
+  padding: 1rem;
+  background: var(--bg);
+}
+
+.brutal-alert-red {
+  border-left-color: var(--accent);
+}
+
+.brutal-alert-blue {
+  border-left-color: var(--water);
+}
+
+.brutal-title {
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin: 0;
+}
+
+.brutal-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.brutal-frame {
+  border: 6px solid var(--ink);
+}
+
+.brutal-swatch {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid var(--ink);
+  cursor: pointer;
+}
+
+.brutal-swatch-selected {
+  box-shadow: inset 0 0 0 3px var(--bg), inset 0 0 0 6px var(--ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

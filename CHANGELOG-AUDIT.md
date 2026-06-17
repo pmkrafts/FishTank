@@ -6,22 +6,41 @@ All codebase changes are logged here in reverse-chronological order (newest firs
 ### [ENTRY #7] - 2026-06-17 12:47:11 (IST)
 
 **Files Changed:**
-- `package.json` (pending)
-- `pnpm-workspace.yaml` (pending)
-- `turbo.json` (pending)
-- `packages/shared/` (pending)
-- `apps/web/` (pending)
-- `apps/worker/` (pending)
-- `CHANGELOG-AUDIT.md` (pending)
+- `package.json` (+17 lines, -0 lines)
+- `pnpm-workspace.yaml` (+14 lines, -0 lines)
+- `turbo.json` (+21 lines, -0 lines)
+- `pnpm-lock.yaml` (+5490 lines, -0 lines)
+- `packages/shared/package.json` (+15 lines, -0 lines)
+- `packages/shared/src/index.ts` (+2 lines, -0 lines)
+- `packages/shared/src/types.ts` (+29 lines, -0 lines)
+- `packages/shared/src/constants.ts` (+16 lines, -0 lines)
+- `packages/shared/tsconfig.json` (+14 lines, -0 lines)
+- `apps/web/` (Astro scaffold: 10 files, see diff)
+- `apps/worker/package.json` (+23 lines, -0 lines)
+- `apps/worker/tsconfig.json` (+12 lines, -0 lines)
+- `apps/worker/wrangler.toml` (+20 lines, -0 lines)
+- `apps/worker/vitest.config.ts` (+10 lines, -0 lines)
+- `apps/worker/src/index.ts` (+29 lines, -0 lines)
+- `apps/worker/src/lib/db.ts` (+29 lines, -0 lines)
+- `apps/worker/src/routes/fish.ts` (+94 lines, -0 lines)
+- `apps/worker/src/routes/fish.test.ts` (+48 lines, -0 lines)
+- `apps/worker/src/routes/upload.ts` (+45 lines, -0 lines)
+- `apps/worker/src/routes/rate-limit.ts` (+21 lines, -0 lines)
+- `apps/worker/src/db/schema.sql` (+17 lines, -0 lines)
+- `CHANGELOG-AUDIT.md` (+19 lines, -0 lines)
 
 **Changes Made:**
-- Initialize Phase 0: Turborepo monorepo skeleton with Astro frontend and Cloudflare Worker backend.
+- Initialized the Turborepo monorepo at the project root with pnpm workspaces.
+- Added Astro web app with React and Tailwind integrations.
+- Added Cloudflare Worker backend with Hono, D1, R2, and KV bindings.
+- Implemented fish list/add/cleanup, upload, and rate-limit routes.
+- Added Worker route tests using vitest-pool-workers and the `SELF` fetch helper.
 
 **Purpose:**
-- Set up the project foundation as defined in `docs/aquarium-execution-plan.md` Phase 0.
+- Establish the project foundation and backend API as defined in Phase 0 and Phase 2 of `docs/aquarium-execution-plan.md`.
 
-**Status:** ⏳ Recording
----
+**Status:** ✅ Recorded
+
 ### [ENTRY #6] - 2026-06-17 12:45:01 (IST)
 
 **Files Changed:**
