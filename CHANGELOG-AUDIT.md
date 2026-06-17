@@ -3,6 +3,23 @@
 All codebase changes are logged here in reverse-chronological order (newest first).
 
 ---
+### [ENTRY #14] - 2026-06-17 16:51:00 (IST)
+
+**Files Changed:**
+- `README.md` (+91 lines, -41 lines)
+- `CHANGELOG-AUDIT.md` (+16 lines, -0 lines)
+
+**Changes Made:**
+- Rewrote `README.md` to clearly separate local development and cloud deployment paths.
+- Added detailed steps for running on a local machine without Wrangler and for deploying to a cloud server or Cloudflare Workers.
+- Included `start:local` command for production-like Node backend runs.
+
+**Purpose:**
+- Make the README a complete guide for both local and cloud usage.
+
+**Status:** ✅ Recorded
+
+---
 ### [ENTRY #13] - 2026-06-17 16:48:38 (IST)
 
 **Files Changed:**
