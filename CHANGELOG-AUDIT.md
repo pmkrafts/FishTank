@@ -3,6 +3,49 @@
 All codebase changes are logged here in reverse-chronological order (newest first).
 
 ---
+### [ENTRY #12] - 2026-06-17 14:11:19 (IST)
+
+**Files Changed:**
+- `docs/architecture-and-flow.md` (+244 lines, -0 lines)
+- `CHANGELOG-AUDIT.md` (+16 lines, -0 lines)
+
+**Changes Made:**
+- Added comprehensive documentation covering project flow, monorepo architecture, system design, tech stack, database schema, masking/rate-limit/movement algorithms, and deployment targets.
+
+**Purpose:**
+- Provide a single reference for how FishTank works end-to-end.
+
+**Status:** ✅ Recorded
+
+---
+### [ENTRY #11] - 2026-06-17 13:54:21 (IST)
+
+**Files Changed:**
+- `.gitignore` (+2 lines, -0 lines)
+- `CHANGELOG-AUDIT.md` (+22 lines, -0 lines)
+- `apps/web/astro.config.mjs` (+0 lines, -2 lines)
+- `apps/web/package.json` (+0 lines, -1 line)
+- `apps/worker/package.json` (+5 lines, -0 lines)
+- `apps/worker/src/local/index.ts` (+36 lines, -0 lines)
+- `apps/worker/src/local/lib/db.ts` (+93 lines, -0 lines)
+- `apps/worker/src/local/lib/bucket.ts` (+40 lines, -0 lines)
+- `apps/worker/src/local/lib/kv.ts` (+11 lines, -0 lines)
+- `docs/LOCAL.md` (+52 lines, -0 lines)
+- `pnpm-lock.yaml` (+341 lines, -88 lines)
+
+**Changes Made:**
+- Added a local Node.js backend (`apps/worker/src/local/`) that runs without Wrangler.
+- Uses `node:sqlite` for the database, filesystem for image storage, and an in-memory map for cooldowns.
+- Removed the `@astrojs/cloudflare` adapter so local frontend dev works without Cloudflare tooling.
+- Added `dev:local` / `start:local` scripts and `docs/LOCAL.md` with local run instructions.
+- Ignored `apps/worker/local-storage/` in `.gitignore`.
+
+**Purpose:**
+- Enable full local development without a Cloudflare account or `wrangler` CLI.
+
+**Status:** ✅ Recorded
+
+---
 ### [ENTRY #10] - 2026-06-17 13:31:48 (IST)
 
 **Files Changed:**
