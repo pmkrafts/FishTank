@@ -14,3 +14,4 @@ export const FISH_SHAPE_TYPES = [
   "long",
   "round",
 ] as const;
+export type FishShapeType = (typeof FISH_SHAPE_TYPES)[number];

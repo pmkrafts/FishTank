@@ -1,10 +1,11 @@
 ---
 import BrutalLayout from "../layouts/BrutalLayout.astro";
+import { UploadPipeline } from "../components/UploadPipeline";
 ---
 
 <BrutalLayout title="ADD FISH — FISHTANK">
-  <div style="padding:2rem; max-width:900px; margin:0 auto;">
-    <h1 class="brutal-title" style="margin-bottom:1rem;">ADD A FISH</h1>
-    <p>Upload pipeline will be wired here.</p>
+  <div style="padding:2rem; max-width:700px; margin:0 auto;">
+    <h1 class="brutal-title" style="margin-bottom:1.5rem;">ADD A FISH</h1>
+    <UploadPipeline client:load />
   </div>
 </BrutalLayout>

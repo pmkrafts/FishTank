@@ -3,6 +3,32 @@
 All codebase changes are logged here in reverse-chronological order (newest first).
 
 ---
+### [ENTRY #8] - 2026-06-17 13:03:47 (IST)
+
+**Files Changed:**
+- `CHANGELOG-AUDIT.md` (+30 lines, -11 lines)
+- `apps/web/package.json` (+1 line, -1 line)
+- `apps/web/src/styles/brutal.css` (+156 lines, -0 lines)
+- `apps/web/src/layouts/BrutalLayout.astro` (+41 lines, -0 lines)
+- `apps/web/src/components/BrutalButton.tsx` (+20 lines, -0 lines)
+- `apps/web/src/components/BrutalBox.tsx` (+17 lines, -0 lines)
+- `apps/web/src/components/BrutalInput.tsx` (+19 lines, -0 lines)
+- `apps/web/src/components/BrutalAlert.tsx` (+11 lines, -0 lines)
+- `apps/web/src/pages/index.astro` (+21 lines, -14 lines)
+- `apps/web/src/pages/add.astro` (+10 lines, -0 lines)
+- `apps/web/src/pages/design.astro` (+39 lines, -0 lines)
+
+**Changes Made:**
+- Created the brutalist design system with CSS tokens, typography, colors, and component utilities.
+- Built `BrutalLayout`, `BrutalButton`, `BrutalBox`, `BrutalInput`, and `BrutalAlert` components.
+- Added a temporary `/design` showcase page and updated `/` and `/add` page shells.
+
+**Purpose:**
+- Implement Phase 1 of `docs/aquarium-execution-plan.md`.
+
+**Status:** ✅ Recorded
+
+---
 ### [ENTRY #7] - 2026-06-17 12:47:11 (IST)
 
 **Files Changed:**

@@ -1,10 +1,14 @@
 ---
 import BrutalLayout from "../layouts/BrutalLayout.astro";
 import { BrutalButton } from "../components/BrutalButton";
+import { AquariumCanvas } from "../components/AquariumCanvas";
+import { RateLimitBanner } from "../components/RateLimitBanner";
 ---
 
 <BrutalLayout title="FISHTANK — Shared Aquarium">
   <div style="display:grid; gap:2rem; padding:2rem; max-width:1200px; margin:0 auto;">
+    <RateLimitBanner client:load />
+
     <section class="brutal-box" style="border:6px solid var(--ink);">
       <h1 class="brutal-title" style="margin-bottom:1rem;">SHARED DIGITAL AQUARIUM</h1>
       <p style="max-width:60ch; margin:0 0 1.5rem;">
@@ -15,10 +19,8 @@ import { BrutalButton } from "../components/BrutalButton";
       </a>
     </section>
 
-    <section class="brutal-frame" style="background:var(--ink); min-height:400px; position:relative;">
-      <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; color:var(--bg);">
-        <p style="text-transform:uppercase; font-weight:700;">Aquarium canvas loading…</p>
-      </div>
+    <section class="brutal-frame" style="background:var(--ink);">
+      <AquariumCanvas client:only="react" />
     </section>
   </div>
 </BrutalLayout>
